@@ -1,2 +1,2 @@
 # Health-Management
-This is a program in python in which uses file handiling to write and read data reguarding the diet and excercises done by person with the time stamp.
+This is a program in Python which uses file handling to write and read data regarding the diet and exercises done by a person with a time stamp.
