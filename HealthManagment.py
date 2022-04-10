@@ -1,11 +1,12 @@
 def getdate():
     import time
     return time.asctime(time.localtime(time.time()))
+nam=input("Please enter your name: ")
 while True:
     op=input("Do you want to Read or Write or Quit (r/w/q) ?\n")
     if op=='w':
-        name=str(input("Whose File do you want to update: Harry, Rohan, Hammad\n"))
-        if name=="Harry" or "harry":
+        name=str(input(f"Whose File do you want to update: {nam}, Rohan, Hammad\n"))
+        if name==nam:
             work=input("Do you want to update Food or excercise (f/e) ?\n")
             if work=='f':
                 f=open("harryfood.txt","a")
@@ -46,8 +47,8 @@ while True:
     elif op=='q':
         break
     else:
-        name=str(input("Whose File do you want to read: Harry, Rohan, Hammad\n"))
-        if name=="Harry" or "harry":
+        name=str(input(f"Whose File do you want to read: {nam}, Rohan, Hammad\n"))
+        if name==nam:
             work=input("Do you want to read Food or excercise (f/e) ?\n")
             if work=='f':
                 f=open("harryfood.txt")
